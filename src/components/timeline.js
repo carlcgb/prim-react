@@ -9,15 +9,15 @@ export const timeline = () => `
         getContent().company.timeline.title,
         null
       )}
-      <div class="mt-10 space-y-6 border-l border-neutral-200 pl-6">
+      <div class="mt-10 space-y-6 border-l border-neutral-200 dark:border-neutral-800 pl-6">
         ${getContent()
           .company.timeline.items.map(
             (item, index) => `
               <article class="relative" data-reveal style="--reveal-delay: ${index * 60}ms">
-                <span class="absolute -left-[10px] top-2 h-3 w-3 rounded-full bg-brand-accent-500"></span>
+                <span class="absolute -left-[10px] top-2 h-3 w-3 rounded-full bg-brand-accent-500 dark:bg-brand-accent-400"></span>
                 <div class="card">
-                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent-600">${item.year}</p>
-                  <p class="mt-2 text-sm text-neutral-600">${item.detail}</p>
+                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent-600 dark:text-brand-accent-400">${item.year}</p>
+                  <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">${item.detail}</p>
                 </div>
               </article>
             `

@@ -227,16 +227,65 @@ const CONTENT = {
       ],
       cta: 'Download'
     },
+    howItWorks: {
+      eyebrow: 'How it works',
+      title: 'Streamline your staffing operations',
+      subtitle: 'Discover how PRIMLogix automates your workflows and enhances productivity.',
+      steps: [
+        {
+          title: 'Setup & Integration',
+          description: 'Quick onboarding with seamless integration to your existing systems. Our team guides you through the process.',
+          icon: '⚙️'
+        },
+        {
+          title: 'Automate & Match',
+          description: 'Let AI-powered matching connect the right candidates to the right positions automatically.',
+          icon: '🤖'
+        },
+        {
+          title: 'Manage & Track',
+          description: 'Monitor placements, schedules, and performance in real-time dashboards designed for your team.',
+          icon: '📊'
+        },
+        {
+          title: 'Scale & Grow',
+          description: 'Expand your operations with confidence using tools that grow with your agency.',
+          icon: '🚀'
+        }
+      ],
+      cta: {
+        text: 'See detailed pricing and plans',
+        link: '/pricing.html'
+      }
+    },
     industryGrid: {
       eyebrow: 'Industries',
-      title: 'Built for agencies across sectors.',
-      items: [
-        { title: 'Healthcare', note: 'Credential tracking and compliance workflows.' },
-        { title: 'Manufacturing', note: 'Shift planning and time-sensitive staffing.' },
-        { title: 'Technology', note: 'Fast placements with skills-based matching.' },
-        { title: 'Hospitality', note: 'High-volume scheduling with real-time updates.' },
-        { title: 'Logistics', note: 'Dispatch-ready staffing and workforce visibility.' },
-        { title: 'Professional services', note: 'Client-ready reporting and CRM insights.' }
+      title: 'Solutions tailored to your needs.',
+      sections: [
+        {
+          title: 'Agencies',
+          description: 'Complete platform for staffing agencies.',
+          points: [
+            'Automated candidate and client management',
+            'Intelligent skills-based matching',
+            'Real-time placement scheduling and tracking',
+            'Integrated billing and payroll',
+            'Customizable dashboards',
+            'Full compliance and audit trails'
+          ]
+        },
+        {
+          title: 'Large enterprises',
+          description: 'Workforce solutions for large organizations.',
+          points: [
+            'Centralized management across multiple sites',
+            'Complete workforce visibility',
+            'Integration with existing systems',
+            'Advanced reporting and analytics',
+            'Dedicated support and personalized training',
+            'Scalability for thousands of employees'
+          ]
+        }
       ]
     },
     cta: {
@@ -344,7 +393,39 @@ const CONTENT = {
       security: {
         title: 'Security you can trust',
         text:
-          'PRIMLogix uses robust encryption, role-based access, secure cloud hosting, and regular audits. Client data stays confidential with 99.9% uptime targets and SOC 2-aligned practices compliant with GDPR and Quebec privacy laws.'
+          'PRIMLogix uses robust encryption, role-based access, secure cloud hosting, and regular audits. Client data stays confidential with 99.9% uptime targets and SOC 2-aligned practices compliant with GDPR and Quebec privacy laws.',
+        certifications: [
+          {
+            name: 'SOC 2',
+            description: 'Type II aligned security controls',
+            status: 'Aligned'
+          },
+          {
+            name: 'GDPR',
+            description: 'European data protection compliance',
+            status: 'Compliant'
+          },
+          {
+            name: 'Loi 25',
+            description: 'Quebec privacy law compliance',
+            status: 'Compliant'
+          },
+          {
+            name: 'ISO 27001',
+            description: 'Information security management',
+            status: 'In Progress'
+          },
+          {
+            name: 'HIPAA',
+            description: 'Healthcare data protection',
+            status: 'Compliant'
+          },
+          {
+            name: '99.9% Uptime',
+            description: 'Service level agreement',
+            status: 'Target'
+          }
+        ]
       },
       team: {
         title: 'Leadership team',
@@ -620,7 +701,7 @@ const CONTENT = {
       title: 'Guides et outils pour equipes de placement modernes.',
       items: [
         {
-          title: 'Guide d’achat ATS/CRM',
+          title: "Guide d'achat ATS/CRM",
           desc: 'Questions pour evaluer un logiciel de placement et son ROI.'
         },
         {
@@ -634,16 +715,65 @@ const CONTENT = {
       ],
       cta: 'Telecharger'
     },
+    howItWorks: {
+      eyebrow: 'Comment ca fonctionne',
+      title: 'Simplifiez vos operations de placement',
+      subtitle: 'Decouvrez comment PRIMLogix automatise vos processus et ameliore la productivite.',
+      steps: [
+        {
+          title: 'Configuration & Integration',
+          description: 'Onboarding rapide avec integration transparente a vos systemes existants. Notre equipe vous guide tout au long du processus.',
+          icon: '⚙️'
+        },
+        {
+          title: 'Automatiser & Matcher',
+          description: 'Laissez le matching alimente par IA connecter automatiquement les bons candidats aux bonnes positions.',
+          icon: '🤖'
+        },
+        {
+          title: 'Gerer & Suivre',
+          description: 'Surveillez les placements, horaires et performances dans des tableaux de bord en temps reel conçus pour votre equipe.',
+          icon: '📊'
+        },
+        {
+          title: 'Evoluer & Grandir',
+          description: 'Developpez vos operations en toute confiance avec des outils qui evoluent avec votre agence.',
+          icon: '🚀'
+        }
+      ],
+      cta: {
+        text: 'Voir les tarifs et forfaits detailles',
+        link: '/pricing.html'
+      }
+    },
     industryGrid: {
       eyebrow: 'Industries',
-      title: 'Concu pour les agences de tous secteurs.',
-      items: [
-        { title: 'Sante', note: 'Suivi des certifications et workflows conformes.' },
-        { title: 'Manufacturier', note: 'Gestion des quarts et placements urgents.' },
-        { title: 'Technologie', note: 'Matching rapide et compétences precises.' },
-        { title: 'Hotellerie', note: 'Planification a volume eleve.' },
-        { title: 'Logistique', note: 'Visibilite terrain et suivi des effectifs.' },
-        { title: 'Services professionnels', note: 'Reporting client et CRM solide.' }
+      title: 'Solutions adaptées à vos besoins.',
+      sections: [
+        {
+          title: 'Agences',
+          description: 'Plateforme complète pour les agences de placement.',
+          points: [
+            'Gestion automatisée des candidats et clients',
+            'Matching intelligent basé sur les compétences',
+            'Planification et suivi des placements en temps réel',
+            'Facturation et paie intégrées',
+            'Tableaux de bord personnalisables',
+            'Conformité et traçabilité complètes'
+          ]
+        },
+        {
+          title: 'Grandes entreprises',
+          description: 'Solutions d\'effectifs pour les grandes organisations.',
+          points: [
+            'Gestion centralisée de multiples sites',
+            'Visibilité complète sur les effectifs',
+            'Intégration avec vos systèmes existants',
+            'Reporting avancé et analytics',
+            'Support dédié et formation personnalisée',
+            'Scalabilité pour des milliers d\'employés'
+          ]
+        }
       ]
     },
     cta: {
@@ -751,7 +881,39 @@ const CONTENT = {
       security: {
         title: 'Securite et conformite',
         text:
-          'Chiffrement robuste, acces par role, hebergement securise et audits reguliers. Confidentialite des donnees, cible 99,9% de disponibilite, alignement SOC 2, RGPD et Loi 25.'
+          'Chiffrement robuste, acces par role, hebergement securise et audits reguliers. Confidentialite des donnees, cible 99,9% de disponibilite, alignement SOC 2, RGPD et Loi 25.',
+        certifications: [
+          {
+            name: 'SOC 2',
+            description: 'Controles de securite Type II alignes',
+            status: 'Aligne'
+          },
+          {
+            name: 'RGPD',
+            description: 'Conformite protection des donnees europeennes',
+            status: 'Conforme'
+          },
+          {
+            name: 'Loi 25',
+            description: 'Conformite loi quebecoise sur la confidentialite',
+            status: 'Conforme'
+          },
+          {
+            name: 'ISO 27001',
+            description: 'Gestion de la securite de l\'information',
+            status: 'En cours'
+          },
+          {
+            name: 'HIPAA',
+            description: 'Protection des donnees de sante',
+            status: 'Conforme'
+          },
+          {
+            name: '99,9% Disponibilite',
+            description: 'Entente de niveau de service',
+            status: 'Cible'
+          }
+        ]
       },
       team: {
         title: 'Equipe dirigeante',

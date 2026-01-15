@@ -26,7 +26,7 @@ export const hero = () => `
           <a class="pill-btn bg-white text-brand-navy-900 hover:bg-neutral-100" href="/solutions.html">
             ${getContent().hero.primaryCta}
           </a>
-          <a class="pill-btn border border-white/40 text-white hover:border-white" href="/pricing.html">
+          <a class="pill-btn border border-white/40 text-white hover:border-white" href="/solutions.html">
             ${getContent().hero.secondaryCta}
           </a>
         </div>

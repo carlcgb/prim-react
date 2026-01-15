@@ -14,7 +14,7 @@ export const solutionsPage = () => `
         getContent().pages.solutions.title,
         getContent().pages.solutions.subtitle
       )}
-      ${features()}
+      ${features(true)}
       ${splitShowcase()}
       ${cta()}
     </main>

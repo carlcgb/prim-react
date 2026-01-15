@@ -10,6 +10,26 @@
     <title>Entreprise | PRIMLogix</title>
   </head>
   <body>
+    <script>
+      // Initialize theme before render to prevent FOUC
+      (function() {
+        const STORAGE_KEY = 'primlogix_theme';
+        const THEMES = { SYSTEM: 'system', LIGHT: 'light', DARK: 'dark' };
+        const getSystemTheme = () => window.matchMedia('(prefers-color-scheme: dark)').matches ? THEMES.DARK : THEMES.LIGHT;
+        const getTheme = () => {
+          const stored = localStorage.getItem(STORAGE_KEY);
+          return stored && Object.values(THEMES).includes(stored) ? stored : THEMES.SYSTEM;
+        };
+        const getEffectiveTheme = () => {
+          const stored = getTheme();
+          return stored === THEMES.SYSTEM ? getSystemTheme() : stored;
+        };
+        const effectiveTheme = getEffectiveTheme();
+        if (effectiveTheme === THEMES.DARK) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
     <div id="app"></div>
     <script type="module" src="/src/entries/company.js"></script>
   </body>

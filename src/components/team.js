@@ -9,7 +9,7 @@ const getInitials = (name) =>
     .join('')
 
 export const team = () => `
-  <section class="section-space bg-neutral-100" id="team">
+  <section class="section-space bg-neutral-100 dark:bg-neutral-950" id="team">
     <div class="container-shell">
       ${sectionHeader(
         getContent().company.sectionEyebrows.team,
@@ -24,11 +24,11 @@ export const team = () => `
                 ${
                   member.photo
                     ? `<img class="h-14 w-14 rounded-full object-cover" src="${member.photo}" alt="${member.name}" loading="lazy" />`
-                    : `<div class="flex h-14 w-14 items-center justify-center rounded-full bg-brand-navy-900 text-sm font-semibold text-white">${getInitials(member.name)}</div>`
+                    : `<div class="flex h-14 w-14 items-center justify-center rounded-full bg-brand-navy-900 dark:bg-brand-accent-600 text-sm font-semibold text-white">${getInitials(member.name)}</div>`
                 }
-                <h3 class="mt-4 text-base font-semibold text-brand-navy-900">${member.name}</h3>
-                <p class="text-xs text-brand-accent-600">${member.role}</p>
-                <p class="mt-3 text-sm text-neutral-600">${member.bio}</p>
+                <h3 class="mt-4 text-base font-semibold text-brand-navy-900 dark:text-white">${member.name}</h3>
+                <p class="text-xs text-brand-accent-600 dark:text-brand-accent-400">${member.role}</p>
+                <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-300">${member.bio}</p>
               </article>
             `
           )

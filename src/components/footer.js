@@ -1,7 +1,7 @@
 import { getContent } from '../data/content.js'
 
 export const footer = () => `
-  <footer class="bg-brand-navy-900 py-12 text-white">
+  <footer class="bg-brand-navy-800 dark:bg-brand-navy-900 py-12 text-white border-t border-brand-navy-700 dark:border-brand-navy-800">
     <div class="container-shell grid gap-8 lg:grid-cols-[1.3fr_2fr]">
       <div>
         <div class="flex items-center gap-2 text-lg font-semibold">

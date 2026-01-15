@@ -4,7 +4,8 @@
 
 @layer base {
   body {
-    @apply min-h-screen bg-neutral-50 font-sans text-neutral-800 antialiased;
+    @apply min-h-screen bg-neutral-50 dark:bg-neutral-900 font-sans text-neutral-800 dark:text-neutral-100 antialiased;
+    @apply transition-colors duration-200;
   }
 
   a {
@@ -14,15 +15,44 @@
 
 @layer components {
   .container-shell {
-    @apply mx-auto w-full max-w-6xl px-5;
+    @apply mx-auto w-full max-w-6xl px-5 relative z-10;
   }
 
   .section-space {
     @apply py-16 sm:py-20 lg:py-24;
   }
 
+  .parallax-section {
+    @apply relative overflow-hidden;
+  }
+
+  .parallax-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-attachment: scroll;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  @media (min-width: 768px) {
+    .parallax-section::before {
+      background-attachment: fixed;
+    }
+  }
+
+  .parallax-section > * {
+    position: relative;
+    z-index: 1;
+  }
+
   .card {
-    @apply rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm;
+    @apply rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/90 dark:bg-neutral-800/90 backdrop-blur-sm p-6 shadow-sm dark:shadow-neutral-900/50;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:-translate-y-1 hover:shadow-md dark:hover:shadow-neutral-900/70;
   }
 
   .pill-btn {
@@ -111,6 +141,49 @@
     }
   }
 
+  .feature-modal {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .feature-modal.hidden {
+    display: none;
+  }
+
+  .feature-modal-backdrop {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .feature-modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .feature-modal-content::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .feature-modal-content::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .feature-modal-content::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  .feature-modal-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .float-slow {
       animation: none;
@@ -124,6 +197,12 @@
       transition: none;
     }
     .parallax-orb {
+      animation: none;
+    }
+    .feature-modal {
+      animation: none;
+    }
+    .feature-modal-backdrop {
       animation: none;
     }
   }

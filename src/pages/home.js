@@ -4,7 +4,7 @@ import { features } from '../components/features.js'
 import { statsStrip } from '../components/statsStrip.js'
 import { splitShowcase } from '../components/splitShowcase.js'
 import { testimonials } from '../components/testimonials.js'
-import { pricing } from '../components/pricing.js'
+import { howItWorks } from '../components/howItWorks.js'
 import { faq } from '../components/faq.js'
 import { cta } from '../components/cta.js'
 import { footer } from '../components/footer.js'
@@ -18,7 +18,7 @@ export const homePage = () => `
       ${features()}
       ${splitShowcase()}
       ${testimonials()}
-      ${pricing()}
+      ${howItWorks()}
       ${faq()}
       ${cta()}
     </main>
