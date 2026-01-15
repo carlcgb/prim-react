@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "name": "primlogix-inspired",
+    "version": "1.0.0",
+    "description": "Design tokens for a fluid, modern B2B SaaS website.",
+    "source": "primlogix.com",
+    "notes": "Tokens are abstracted; do not copy image or copy content."
+  },
+  "color": {
+    "brand": {
+      "navy": {
+        "50": "#eef2f9",
+        "100": "#d8e1f2",
+        "200": "#b5c6e4",
+        "300": "#8ea7d3",
+        "400": "#5b79b7",
+        "500": "#2f4f8a",
+        "600": "#1d3968",
+        "700": "#152a4f",
+        "800": "#0f213f",
+        "900": "#0b1c3a"
+      },
+      "accent": {
+        "50": "#e6f7ff",
+        "100": "#cceeff",
+        "200": "#99ddff",
+        "300": "#66ccff",
+        "400": "#33bbff",
+        "500": "#1c9bdc",
+        "600": "#1584bf",
+        "700": "#0f6b9a",
+        "800": "#0a5174",
+        "900": "#063a54"
+      },
+      "teal": {
+        "50": "#e6fffb",
+        "100": "#c9fff7",
+        "200": "#93fff0",
+        "300": "#5ef7e6",
+        "400": "#2ac7b0",
+        "500": "#1da794",
+        "600": "#168a79",
+        "700": "#116c5e",
+        "800": "#0c5046",
+        "900": "#073a33"
+      }
+    },
+    "neutral": {
+      "white": "#ffffff",
+      "50": "#f5f7fb",
+      "100": "#eef2f7",
+      "200": "#e1e7f0",
+      "300": "#cfd8e6",
+      "400": "#9fb0c6",
+      "500": "#6f8199",
+      "600": "#4a5a6f",
+      "700": "#2f3b4d",
+      "800": "#202835",
+      "900": "#151b25",
+      "black": "#0b0f14"
+    },
+    "status": {
+      "success": "#2fbf71",
+      "warning": "#f2c94c",
+      "error": "#eb5757",
+      "info": "#56ccf2"
+    },
+    "gradient": {
+      "heroOverlay": "linear-gradient(90deg, rgba(11,28,58,0.92) 0%, rgba(11,28,58,0.55) 55%, rgba(11,28,58,0) 100%)",
+      "sectionGlow": "linear-gradient(180deg, rgba(29,57,104,0.12) 0%, rgba(11,28,58,0) 100%)"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "sans": "Inter, system-ui, -apple-system, Segoe UI, sans-serif"
+    },
+    "fontWeight": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "fontSize": {
+      "xs": "12px",
+      "sm": "14px",
+      "md": "16px",
+      "lg": "18px",
+      "xl": "20px",
+      "2xl": "24px",
+      "3xl": "28px",
+      "4xl": "32px",
+      "5xl": "40px"
+    },
+    "lineHeight": {
+      "tight": "1.2",
+      "snug": "1.35",
+      "normal": "1.6"
+    },
+    "letterSpacing": {
+      "tight": "-0.01em",
+      "wide": "0.08em",
+      "wider": "0.2em"
+    }
+  },
+  "spacing": {
+    "0": "0px",
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "5": "20px",
+    "6": "24px",
+    "8": "32px",
+    "10": "40px",
+    "12": "48px",
+    "16": "64px",
+    "20": "80px",
+    "24": "96px"
+  },
+  "layout": {
+    "container": {
+      "maxWidth": "1200px",
+      "paddingX": "24px"
+    },
+    "grid": {
+      "columns": 12,
+      "gap": "24px"
+    },
+    "section": {
+      "paddingY": {
+        "desktop": "80px",
+        "mobile": "56px"
+      }
+    }
+  },
+  "radius": {
+    "sm": "8px",
+    "md": "12px",
+    "lg": "16px",
+    "xl": "24px",
+    "pill": "999px"
+  },
+  "shadow": {
+    "xs": "0 2px 6px rgba(11, 28, 58, 0.08)",
+    "sm": "0 6px 18px rgba(11, 28, 58, 0.12)",
+    "md": "0 14px 28px rgba(11, 28, 58, 0.16)",
+    "lg": "0 24px 40px rgba(11, 28, 58, 0.2)"
+  },
+  "border": {
+    "light": "1px solid rgba(15, 36, 80, 0.08)",
+    "accent": "1px solid rgba(28, 155, 220, 0.3)"
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "background": "{color.brand.accent.500}",
+        "color": "{color.neutral.white}",
+        "radius": "{radius.pill}",
+        "padding": "12px 20px",
+        "shadow": "{shadow.sm}"
+      },
+      "secondary": {
+        "background": "transparent",
+        "color": "{color.brand.accent.500}",
+        "border": "1px solid {color.brand.accent.500}",
+        "radius": "{radius.pill}",
+        "padding": "12px 20px"
+      }
+    },
+    "card": {
+      "background": "{color.neutral.white}",
+      "radius": "{radius.md}",
+      "shadow": "{shadow.sm}",
+      "padding": "24px",
+      "border": "{border.light}"
+    },
+    "badge": {
+      "background": "rgba(28, 155, 220, 0.1)",
+      "color": "{color.brand.accent.500}",
+      "radius": "{radius.pill}",
+      "padding": "4px 10px",
+      "textTransform": "uppercase",
+      "letterSpacing": "{typography.letterSpacing.wider}"
+    }
+  },
+  "motion": {
+    "transition": {
+      "fast": "150ms ease",
+      "normal": "220ms ease",
+      "slow": "320ms ease"
+    },
+    "hover": {
+      "lift": "translateY(-2px)",
+      "shadow": "{shadow.md}"
+    }
+  }
+}

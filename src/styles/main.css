@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen bg-neutral-50 font-sans text-neutral-800 antialiased;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto w-full max-w-6xl px-5;
+  }
+
+  .section-space {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .card {
+    @apply rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm;
+  }
+
+  .pill-btn {
+    @apply inline-flex items-center justify-center rounded-pill px-5 py-3 text-sm font-semibold;
+  }
+
+  .pricing-gallery {
+    @apply items-start;
+  }
+
+  .pricing-image {
+    @apply bg-transparent p-2 shadow-[0_18px_35px_rgba(15,23,42,0.16)] ring-1 ring-white/80;
+    animation: float-slow 9s ease-in-out infinite;
+    animation-delay: var(--float-delay, 0s);
+    will-change: transform;
+  }
+}
+
+@layer utilities {
+  .parallax-surface {
+    background-image: radial-gradient(circle at 15% 15%, rgba(255, 255, 255, 0.12), transparent 55%),
+      radial-gradient(circle at 85% 10%, rgba(28, 155, 220, 0.2), transparent 50%),
+      radial-gradient(circle at 70% 80%, rgba(42, 199, 176, 0.18), transparent 45%),
+      radial-gradient(circle at 10% 75%, rgba(246, 141, 66, 0.18), transparent 40%);
+    background-attachment: scroll;
+  }
+
+  @media (min-width: 768px) {
+    .parallax-surface {
+      background-attachment: fixed;
+    }
+  }
+
+  .float-slow {
+    animation: float-slow 8s ease-in-out infinite;
+  }
+
+  .text-shadow-soft {
+    text-shadow: 0 6px 18px rgba(11, 28, 58, 0.35);
+  }
+
+  .parallax-orb {
+    position: absolute;
+    display: block;
+    border-radius: 999px;
+    opacity: 0.22;
+    filter: blur(12px);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.55), rgba(28, 155, 220, 0.08));
+  }
+
+  .parallax-orb--one {
+    top: -120px;
+    right: -80px;
+    width: 280px;
+    height: 280px;
+    animation: float-slow 10s ease-in-out infinite;
+  }
+
+  .parallax-orb--two {
+    bottom: -140px;
+    left: -100px;
+    width: 320px;
+    height: 320px;
+    animation: float-slow 12s ease-in-out infinite;
+  }
+
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 600ms ease, transform 600ms ease;
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  [data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes float-slow {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .float-slow {
+      animation: none;
+    }
+    .pricing-image {
+      animation: none;
+    }
+    [data-reveal] {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .parallax-orb {
+      animation: none;
+    }
+  }
+}

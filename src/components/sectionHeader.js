@@ -1,0 +1,15 @@
+export const sectionHeader = (eyebrow, title, subtitle) => `
+  <div class="text-center">
+    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-brand-accent-600">
+      ${eyebrow}
+    </p>
+    <h2 class="mt-3 text-3xl font-semibold text-brand-navy-900 sm:text-4xl">
+      ${title}
+    </h2>
+    ${
+      subtitle
+        ? `<p class="mt-3 text-sm text-neutral-600 sm:text-base">${subtitle}</p>`
+        : ''
+    }
+  </div>
+`
