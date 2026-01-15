@@ -53,7 +53,7 @@ export const pricing = () => `
                 ${plan.features.map((feature) => `<li>• ${feature}</li>`).join('')}
               </ul>
               <a
-                class="pill-btn mt-6 w-full justify-center bg-brand-accent-500 text-white hover:bg-brand-accent-600 dark:bg-brand-accent-600 dark:hover:bg-brand-accent-700"
+                class="pill-btn mt-6 w-full justify-center bg-orange-500 text-white hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 transition-colors"
                 href="/company.html#contact"
               >
                 ${getContent().pricing.cta}

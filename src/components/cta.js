@@ -55,7 +55,7 @@ export const cta = () => `
                 required
               ></textarea>
             </label>
-            <button class="pill-btn w-full justify-center bg-white text-brand-navy-900 hover:bg-neutral-100" type="submit">
+            <button class="pill-btn w-full justify-center bg-orange-500 text-white hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 transition-colors" type="submit">
               ${getContent().cta.form.submitLabel}
             </button>
           </form>

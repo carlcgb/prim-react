@@ -23,7 +23,7 @@ export const hero = () => `
           ${getContent().hero.subtitle}
         </p>
         <div class="flex flex-wrap gap-4" data-reveal style="--reveal-delay: 200ms">
-          <a class="pill-btn bg-white text-brand-navy-900 hover:bg-neutral-100" href="/solutions.html">
+          <a class="pill-btn bg-orange-500 text-white hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 transition-colors" href="/solutions.html">
             ${getContent().hero.primaryCta}
           </a>
           <a class="pill-btn border border-white/40 text-white hover:border-white" href="/solutions.html">

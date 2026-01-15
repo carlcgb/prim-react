@@ -39,7 +39,7 @@ export const howItWorks = () => {
         <div class="mt-10 text-center">
           <a 
             href="${content.cta.link}" 
-            class="pill-btn inline-flex bg-brand-accent-500 text-white hover:bg-brand-accent-600 dark:bg-brand-accent-600 dark:hover:bg-brand-accent-700 shadow-sm"
+            class="pill-btn inline-flex bg-orange-500 text-white hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 shadow-sm transition-colors"
           >
             ${content.cta.text}
             <svg class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

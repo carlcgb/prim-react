@@ -59,7 +59,7 @@ export const header = () => `
           </svg>
         </button>
         <a
-          class="pill-btn hidden bg-brand-accent-500 text-white shadow-sm hover:bg-brand-accent-600 dark:bg-brand-accent-600 dark:hover:bg-brand-accent-700 sm:inline-flex transition-colors"
+          class="pill-btn hidden bg-orange-500 text-white shadow-sm hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 sm:inline-flex transition-colors"
           href="/company.html#contact"
         >
           ${getContent().cta.form.submitLabel}
@@ -81,7 +81,7 @@ export const header = () => `
           )
           .join('')}
         <a
-          class="pill-btn w-full justify-center bg-brand-accent-500 text-white shadow-sm hover:bg-brand-accent-600 dark:bg-brand-accent-600 dark:hover:bg-brand-accent-700 transition-colors"
+          class="pill-btn w-full justify-center bg-orange-500 text-white shadow-sm hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 transition-colors"
           href="/company.html#contact"
         >
           ${getContent().cta.form.submitLabel}
