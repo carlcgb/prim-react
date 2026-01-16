@@ -47,7 +47,7 @@ export const header = () => `
           data-lang-toggle
           aria-label="Toggle language"
         >
-          ${getLocale() === 'en' ? 'FR' : 'EN'}
+          ${getLocale() === 'en' ? 'EN' : 'FR'}
         </button>
         <button
           class="inline-flex items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-700 p-2 text-neutral-600 dark:text-neutral-300 hover:border-brand-accent-500 hover:text-brand-accent-600 dark:hover:border-brand-accent-400 dark:hover:text-brand-accent-400 transition-colors xl:hidden"
