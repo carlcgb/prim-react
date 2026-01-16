@@ -31,12 +31,12 @@ export const initFeatureModal = () => {
 
   // Mapping des images pour chaque feature (index-based)
   const featureImages = [
-    'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/PRIM Trio.png', // ATS + CRM
-    'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/PRIM Trio different.png', // Recruitment automation
-    'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/Cell Connection.png', // Scheduling + staffing
-    'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/Cell communications.png', // Billing + payroll
-    'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/Cell tableau bord.png', // BI dashboards
-    'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/Phone Dashboard.png', // Collaboration
+    'https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/mockups/PRIM Trio.png', // ATS + CRM
+    'https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/mockups/PRIM Trio different.png', // Recruitment automation
+    'https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/mockups/Cell Connection.png', // Scheduling + staffing
+    'https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/mockups/Cell communications.png', // Billing + payroll
+    'https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/mockups/Cell tableau bord.png', // BI dashboards
+    'https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/mockups/Phone Dashboard.png', // Collaboration
   ]
 
   // Ouvrir le modal
@@ -125,3 +125,4 @@ export const initFeatureModal = () => {
     document.removeEventListener('keydown', handleEscape)
   }
 }
+
