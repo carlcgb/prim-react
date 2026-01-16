@@ -51,6 +51,9 @@ cd dist; Compress-Archive -Path * -DestinationPath ..\primlogix-dist.zip -Force;
 # Upload & Deploy
 gcloud compute scp primlogix-dist.zip wordpress-prim-vm:/tmp/primlogix-dist.zip --zone=us-east1-b
 gcloud compute ssh wordpress-prim-vm --zone=us-east1-b --command="cd /var/www/html/wp-content/themes/primlogix-theme && sudo rm -rf dist/* && sudo unzip -o /tmp/primlogix-dist.zip -d dist/ && sudo chown -R www-data:www-data dist/ && sudo chmod -R 755 dist/"
+
+# Clear cache
+gcloud compute ssh wordpress-prim-vm --zone=us-east1-b --command="wp cache flush --allow-root"
 ```
 
 ## Documentation

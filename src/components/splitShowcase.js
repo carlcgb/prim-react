@@ -22,7 +22,7 @@ export const splitShowcase = () => `
       <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-navy-50 to-brand-accent-50 dark:from-brand-navy-900 dark:to-brand-navy-800 p-6 shadow-lg dark:shadow-neutral-900/50 float-slow">
         <div class="relative z-10 rounded-2xl bg-white/80 dark:bg-neutral-800/80 backdrop-blur-sm p-4 shadow-xl">
           <img
-            src="./nouveau%20site%202026/PRIM%20Trio.png"
+            src="https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/PRIM Trio.png"
             alt="PRIMLogix Dashboard Mockup"
             class="w-full h-auto rounded-xl object-contain shadow-2xl transition-transform duration-300 hover:scale-[1.02]"
             loading="lazy"

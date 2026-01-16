@@ -122,6 +122,14 @@ gcloud compute ssh wordpress-prim-vm --zone=us-east1-b --command="cd /var/www/ht
 
 Visit your site: `https://34.23.76.77` and hard refresh (`Ctrl+F5`) to see changes.
 
+### Step 7: Clear Server Cache (if enabled)
+
+If WordPress caching is enabled, flush cache:
+
+```powershell
+wp cache flush --allow-root
+```
+
 ---
 
 ## Quick Reference Commands
@@ -140,6 +148,9 @@ gcloud compute scp primlogix-dist.zip wordpress-prim-vm:/tmp/primlogix-dist.zip 
 
 # Deploy
 gcloud compute ssh wordpress-prim-vm --zone=us-east1-b --command="cd /var/www/html/wp-content/themes/primlogix-theme && sudo rm -rf dist/* && sudo unzip -o /tmp/primlogix-dist.zip -d dist/ && sudo chown -R www-data:www-data dist/ && sudo chmod -R 755 dist/"
+
+# Clear cache (if enabled)
+gcloud compute ssh wordpress-prim-vm --zone=us-east1-b --command="wp cache flush --allow-root"
 ```
 
 ### Check Server Status
@@ -195,10 +206,11 @@ gcloud compute ssh wordpress-prim-vm --zone=us-east1-b --command="sudo cp /tmp/i
 - Build and deploy
 
 #### 4. Update Images/Assets
-**Location:** WordPress Media Library
-- Images are hosted at: `https://34.23.76.77/wp-content/uploads/nouveau site 2026/...`
-- Update image URLs in `src/data/content.js` if you upload new images
-- No rebuild needed if only changing URLs (but rebuild to be safe)
+**Locations:** WordPress Media Library + local `public/`
+- Mockups live in `public/nouveau site 2026/` and are referenced via URL-encoded paths
+- Team photos and logos use WordPress media URLs
+- Update image URLs in `src/data/content.js` or component files if you upload new images
+- Rebuild after changes to local assets
 
 #### 5. Update Navigation Links
 **File:** `src/data/content.js`
@@ -304,9 +316,10 @@ gcloud compute ssh wordpress-prim-vm --zone=us-east1-b --command="sudo cp /tmp/i
 ### Issue: Images Not Loading
 
 **Solutions:**
-1. **Check image URLs** in `src/data/content.js` - Must use full WordPress media URLs
-2. **Verify images exist** in WordPress media library
-3. **Check file permissions**:
+1. **Check image URLs** in `src/data/content.js` and components
+2. **Verify WordPress-hosted images exist** in the media library
+3. **Verify local mockups exist** in `public/nouveau site 2026/`
+4. **Check file permissions**:
    ```powershell
    gcloud compute ssh wordpress-prim-vm --zone=us-east1-b --command="ls -la /var/www/html/wp-content/uploads/nouveau\ site\ 2026/"
    ```
@@ -366,7 +379,7 @@ gcloud compute ssh wordpress-prim-vm --zone=us-east1-b --command="sudo cp /tmp/i
 1. **Always build before deploying** - Never edit files in `dist/` directly
 2. **Copy `manifest.json`** - Must copy from `.vite/manifest.json` to `dist/manifest.json` after build
 3. **Use clean URLs** - Links should be `/solutions/` not `/solutions.html`
-4. **Image URLs** - Use full WordPress media URLs: `https://34.23.76.77/wp-content/uploads/...`
+4. **Image URLs** - Local mockups live in `public/nouveau site 2026/` (URL-encode spaces)
 5. **Hard refresh after deployment** - `Ctrl+F5` to bypass browser cache
 6. **Check error logs** if something breaks - WordPress logs are your friend
 7. **Test locally first** (optional but recommended) - Use `npm run dev` before deploying
@@ -393,6 +406,6 @@ gcloud compute ssh wordpress-prim-vm --zone=us-east1-b --command="sudo cp /tmp/i
 
 ---
 
-**Last Updated:** 2026-01-15
+**Last Updated:** 2026-01-16
 **Maintained by:** Development Team
 **Contact:** For issues or questions, refer to this guide first, then check error logs.
