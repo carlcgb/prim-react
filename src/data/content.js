@@ -123,7 +123,7 @@ const CONTENT = {
       ],
       gallery: [
         {
-          src: 'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/PRIM Trio different.png',
+          src: './nouveau%20site%202026/PRIM%20Trio%20different.png',
           alt: 'PRIMLogix desktop dashboards preview'
         }
       ],
@@ -436,21 +436,21 @@ const CONTENT = {
             role: 'CEO & CTO',
             bio: '20+ years evolving PRIM from dental staffing to a global agency platform.',
             photo:
-              'https://34.23.76.77/wp-content/uploads/nouveau site 2026/team/Etienne.png'
+              'https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/team/Etienne.png'
           },
           {
             name: 'Isabelle Caussignac',
             role: 'Client Success Lead',
             bio: 'Guides agencies through onboarding with a focus on measurable outcomes.',
             photo:
-              'https://34.23.76.77/wp-content/uploads/nouveau site 2026/team/Isabelle.png'
+              'https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/team/Isabelle.png'
           },
           {
             name: 'Bruno Pelletier',
             role: 'Lead Developer',
             bio: 'Drives product quality, automation, and reliable deployments.',
             photo:
-              'https://34.23.76.77/wp-content/uploads/nouveau site 2026/team/bruno.png'
+              'https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/team/bruno.png'
           },
           {
             name: 'Product & QA Team',
@@ -611,7 +611,7 @@ const CONTENT = {
       ],
       gallery: [
         {
-          src: 'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/PRIM Trio different.png',
+          src: './nouveau%20site%202026/PRIM%20Trio%20different.png',
           alt: 'Apercu des tableaux de bord PRIMLogix'
         }
       ],
@@ -924,21 +924,21 @@ const CONTENT = {
             role: 'CEO et CTO',
             bio: 'Plus de 20 ans a faire evoluer PRIM vers une plateforme mondiale.',
             photo:
-              'https://34.23.76.77/wp-content/uploads/nouveau site 2026/team/Etienne.png'
+              'https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/team/Etienne.png'
           },
           {
             name: 'Isabelle Caussignac',
             role: 'Responsable succes client',
             bio: 'Accompagne les agences vers des resultats mesurables.',
             photo:
-              'https://34.23.76.77/wp-content/uploads/nouveau site 2026/team/Isabelle.png'
+              'https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/team/Isabelle.png'
           },
           {
             name: 'Bruno Pelletier',
             role: 'Lead developpeur',
             bio: 'Pilote la qualite produit, l’automatisation et les deploiements.',
             photo:
-              'https://34.23.76.77/wp-content/uploads/nouveau site 2026/team/bruno.png'
+              'https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/team/bruno.png'
           },
           {
             name: 'Equipe produit & QA',

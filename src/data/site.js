@@ -1,10 +1,10 @@
 export const navLinks = [
-  { label: 'Accueil', href: '/index.html' },
-  { label: 'Solutions', href: '/solutions.html' },
-  { label: 'Industries', href: '/industries.html' },
-  { label: 'Ressources', href: '/resources.html' },
-  { label: 'Tarifs', href: '/pricing.html' },
-  { label: 'Entreprise', href: '/company.html' }
+  { label: 'Accueil', href: '/' },
+  { label: 'Solutions', href: '/solutions/' },
+  { label: 'Industries', href: '/industries/' },
+  { label: 'Ressources', href: '/resources/' },
+  { label: 'Tarifs', href: '/pricing/' },
+  { label: 'Entreprise', href: '/company/' }
 ]
 
 export const footerColumns = [

@@ -6,7 +6,7 @@ export const footer = () => `
       <div>
         <div class="flex items-center">
           <img 
-            src="https://34.23.76.77/wp-content/uploads/nouveau site 2026/logo/prim-logo-white.png" 
+            src="https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/logo/prim-logo-white.png" 
             alt="${getContent().brandName}"
             class="h-10 w-auto max-w-[180px] flex-shrink-0 object-contain"
             style="aspect-ratio: auto;"
@@ -47,7 +47,7 @@ export const footer = () => `
       </div>
     </div>
     <div class="container-shell mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between">
-      <span>(c) 2026 PRIMLogix. ${getContent().footer.copy}</span>
+      <span>© 2026 PRIMLogix. ${getContent().footer.copy}</span>
       <div class="flex gap-4">
         ${getContent()
           .footer.legal.map(

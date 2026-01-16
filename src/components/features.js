@@ -55,7 +55,7 @@ export const features = (enableModal = false) => {
                 <div class="w-full h-full max-w-md max-h-full flex items-center justify-center">
                   <img
                     id="modal-screenshot"
-                    src="https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/PRIM Trio.png"
+                    src="./nouveau%20site%202026/PRIM%20Trio.png"
                     alt="Feature screenshot"
                     class="max-w-full max-h-full w-auto h-auto rounded-xl shadow-2xl object-contain"
                   />

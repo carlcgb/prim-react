@@ -8,13 +8,13 @@ export const header = () => `
       <div class="flex items-center justify-between">
       <a href="/" class="flex items-center">
         <img 
-          src="https://34.23.76.77/wp-content/uploads/nouveau site 2026/logo/prim-logo-black.png" 
+          src="https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/logo/prim-logo-black.png" 
           alt="${getContent().brandName}"
           class="h-10 w-auto dark:hidden object-contain"
           style="max-width: 180px;"
         />
         <img 
-          src="https://34.23.76.77/wp-content/uploads/nouveau site 2026/logo/prim-logo-white.png" 
+          src="https://34.23.76.77/wp-content/uploads/nouveau%20site%202026/logo/prim-logo-white.png" 
           alt="${getContent().brandName}"
           class="h-10 w-auto hidden dark:block object-contain"
           style="max-width: 180px;"
