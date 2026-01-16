@@ -156,6 +156,8 @@
   .feature-modal-content {
     max-height: 90vh;
     overflow-y: auto;
+    min-height: 600px;
+    height: auto;
   }
 
   .feature-modal-content::-webkit-scrollbar {
@@ -183,6 +185,7 @@
       opacity: 1;
     }
   }
+
 
   @media (prefers-reduced-motion: reduce) {
     .float-slow {

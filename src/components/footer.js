@@ -1,14 +1,16 @@
 import { getContent } from '../data/content.js'
 
 export const footer = () => `
-  <footer class="bg-brand-navy-800 dark:bg-brand-navy-900 py-12 text-white border-t border-brand-navy-700 dark:border-brand-navy-800">
+  <footer class="relative bg-brand-navy-800 dark:bg-brand-navy-900 py-12 text-white border-t border-brand-navy-700 dark:border-brand-navy-800">
     <div class="container-shell grid gap-8 lg:grid-cols-[1.3fr_2fr]">
       <div>
-        <div class="flex items-center gap-2 text-lg font-semibold">
-          <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10">
-            P
-          </span>
-          ${getContent().brandName}
+        <div class="flex items-center">
+          <img 
+            src="https://34.23.76.77/wp-content/uploads/nouveau site 2026/logo/prim-logo-white.png" 
+            alt="${getContent().brandName}"
+            class="h-10 w-auto max-w-[180px] flex-shrink-0 object-contain"
+            style="aspect-ratio: auto;"
+          />
         </div>
         <p class="mt-4 text-sm text-white/70">
           ${getContent().footer.tagline}

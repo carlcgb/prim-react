@@ -43,21 +43,21 @@ export const features = (enableModal = false) => {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            <div class="grid gap-6 lg:grid-cols-2">
-              <div class="p-8 lg:p-12">
+            <div class="grid gap-6 lg:grid-cols-2 h-[600px]">
+              <div class="p-8 lg:p-12 flex flex-col justify-center overflow-y-auto">
                 <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-brand-accent-50 dark:bg-brand-accent-900/30 text-brand-accent-600 dark:text-brand-accent-400">
                   <span class="text-lg font-semibold">+</span>
                 </div>
                 <h3 class="text-3xl font-semibold text-brand-navy-900 dark:text-white mb-4" id="modal-title"></h3>
                 <p class="text-base text-neutral-600 dark:text-neutral-300 leading-relaxed" id="modal-description"></p>
               </div>
-              <div class="bg-gradient-to-br from-brand-navy-50 to-brand-accent-50 dark:from-brand-navy-900 dark:to-brand-navy-800 p-8 lg:p-12 flex items-center justify-center">
-                <div class="w-full max-w-md">
+              <div class="bg-gradient-to-br from-brand-navy-50 to-brand-accent-50 dark:from-brand-navy-900 dark:to-brand-navy-800 p-8 lg:p-12 flex items-center justify-center overflow-hidden">
+                <div class="w-full h-full max-w-md max-h-full flex items-center justify-center">
                   <img
                     id="modal-screenshot"
-                    src="/nouveau site 2026/PRIM Trio.png"
+                    src="https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/PRIM Trio.png"
                     alt="Feature screenshot"
-                    class="w-full h-auto rounded-xl shadow-2xl object-contain"
+                    class="max-w-full max-h-full w-auto h-auto rounded-xl shadow-2xl object-contain"
                   />
                 </div>
               </div>

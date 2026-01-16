@@ -54,7 +54,9 @@ export const pricing = () => `
               </ul>
               <a
                 class="pill-btn mt-6 w-full justify-center bg-orange-500 text-white hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 transition-colors"
-                href="/company.html#contact"
+                href="https://outlook.office365.com/book/CalendrierPRIMLogix@primlogix.com/s/Ti69MelPTkWrwygAg8qxBg2?ismsaljsauthenabled=true"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 ${getContent().pricing.cta}
               </a>

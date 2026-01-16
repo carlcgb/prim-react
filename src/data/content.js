@@ -7,12 +7,12 @@ const CONTENT = {
     definition:
       'PRIMLogix is an all-in-one ATS/CRM platform for staffing agencies, automating recruitment, candidate matching, scheduling, billing, and payroll while prioritizing human connections and efficiency.',
     navLinks: [
-      { label: 'Home', href: '/index.html' },
-      { label: 'Solutions', href: '/solutions.html' },
-      { label: 'Industries', href: '/industries.html' },
-      { label: 'Resources', href: '/resources.html' },
-      { label: 'Pricing', href: '/pricing.html' },
-      { label: 'Company', href: '/company.html' }
+      { label: 'Home', href: '/' },
+      { label: 'Solutions', href: '/solutions/' },
+      { label: 'Industries', href: '/industries/' },
+      { label: 'Resources', href: '/resources/' },
+      { label: 'Pricing', href: '/pricing/' },
+      { label: 'Company', href: '/company/' }
     ],
     hero: {
       badge: 'Staffing software for agencies',
@@ -123,7 +123,7 @@ const CONTENT = {
       ],
       gallery: [
         {
-          src: '/nouveau%20site%202026/PRIM%20Trio%20different.png',
+          src: 'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/PRIM Trio different.png',
           alt: 'PRIMLogix desktop dashboards preview'
         }
       ],
@@ -308,8 +308,8 @@ const CONTENT = {
       tagline: 'Staffing software that keeps people at the center.',
       badges: ['GDPR', 'Loi 25', 'SOC 2 aligned'],
       legal: [
-        { label: 'Legal notice', href: '/company.html' },
-        { label: 'Privacy policy', href: '/company.html' }
+        { label: 'Legal notice', href: '/company/' },
+        { label: 'Privacy policy', href: '/company/' }
       ],
       copy: 'All rights reserved.'
     },
@@ -317,25 +317,25 @@ const CONTENT = {
       {
         title: 'Solutions',
         links: [
-          { label: 'ATS & CRM', href: '/solutions.html' },
-          { label: 'Recruitment automation', href: '/solutions.html' },
-          { label: 'Scheduling', href: '/solutions.html' },
-          { label: 'Billing & payroll', href: '/solutions.html' }
+          { label: 'ATS & CRM', href: '/solutions/' },
+          { label: 'Recruitment automation', href: '/solutions/' },
+          { label: 'Scheduling', href: '/solutions/' },
+          { label: 'Billing & payroll', href: '/solutions/' }
         ]
       },
       {
         title: 'Company',
         links: [
-          { label: 'About PRIMLogix', href: '/company.html' },
-          { label: 'Team', href: '/company.html#team' },
-          { label: 'Timeline', href: '/company.html#timeline' },
-          { label: 'Security', href: '/company.html#security' }
+          { label: 'About PRIMLogix', href: '/company/' },
+          { label: 'Team', href: '/company/#team' },
+          { label: 'Timeline', href: '/company/#timeline' },
+          { label: 'Security', href: '/company/#security' }
         ]
       },
       {
         title: 'Contact',
         links: [
-          { label: 'Schedule a demo', href: '/company.html#contact' },
+          { label: 'Schedule a demo', href: 'https://outlook.office365.com/book/CalendrierPRIMLogix@primlogix.com/s/Ti69MelPTkWrwygAg8qxBg2?ismsaljsauthenabled=true' },
           { label: 'info@primlogix.com', href: 'mailto:info@primlogix.com' },
           { label: '1 844-849-7746', href: 'tel:18448497746' }
         ]
@@ -436,21 +436,21 @@ const CONTENT = {
             role: 'CEO & CTO',
             bio: '20+ years evolving PRIM from dental staffing to a global agency platform.',
             photo:
-              'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=600&auto=format&fit=crop'
+              'https://34.23.76.77/wp-content/uploads/nouveau site 2026/team/Etienne.png'
           },
           {
             name: 'Isabelle Caussignac',
             role: 'Client Success Lead',
             bio: 'Guides agencies through onboarding with a focus on measurable outcomes.',
             photo:
-              'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=600&auto=format&fit=crop'
+              'https://34.23.76.77/wp-content/uploads/nouveau site 2026/team/Isabelle.png'
           },
           {
             name: 'Bruno Pelletier',
             role: 'Lead Developer',
             bio: 'Drives product quality, automation, and reliable deployments.',
             photo:
-              'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop'
+              'https://34.23.76.77/wp-content/uploads/nouveau site 2026/team/bruno.png'
           },
           {
             name: 'Product & QA Team',
@@ -495,12 +495,12 @@ const CONTENT = {
     definition:
       'PRIMLogix est une plateforme ATS/CRM tout-en-un pour agences de placement, qui automatise le recrutement, le matching, les horaires, la facturation et la paie tout en priorisant le lien humain.',
     navLinks: [
-      { label: 'Accueil', href: '/index.html' },
-      { label: 'Solutions', href: '/solutions.html' },
-      { label: 'Industries', href: '/industries.html' },
-      { label: 'Ressources', href: '/resources.html' },
-      { label: 'Tarifs', href: '/pricing.html' },
-      { label: 'Entreprise', href: '/company.html' }
+      { label: 'Accueil', href: '/' },
+      { label: 'Solutions', href: '/solutions/' },
+      { label: 'Industries', href: '/industries/' },
+      { label: 'Ressources', href: '/resources/' },
+      { label: 'Tarifs', href: '/pricing/' },
+      { label: 'Entreprise', href: '/company/' }
     ],
     hero: {
       badge: 'Logiciel de placement pour agences',
@@ -611,7 +611,7 @@ const CONTENT = {
       ],
       gallery: [
         {
-          src: '/nouveau%20site%202026/PRIM%20Trio%20different.png',
+          src: 'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/PRIM Trio different.png',
           alt: 'Apercu des tableaux de bord PRIMLogix'
         }
       ],
@@ -796,8 +796,8 @@ const CONTENT = {
       tagline: 'Un logiciel de placement qui garde l’humain au centre.',
       badges: ['RGPD', 'Loi 25', 'SOC 2 aligne'],
       legal: [
-        { label: 'Mentions legales', href: '/company.html' },
-        { label: 'Politique de confidentialite', href: '/company.html' }
+        { label: 'Mentions legales', href: '/company/' },
+        { label: 'Politique de confidentialite', href: '/company/' }
       ],
       copy: 'Tous droits reserves.'
     },
@@ -805,25 +805,25 @@ const CONTENT = {
       {
         title: 'Solutions',
         links: [
-          { label: 'ATS & CRM', href: '/solutions.html' },
-          { label: 'Automatisation', href: '/solutions.html' },
-          { label: 'Planification', href: '/solutions.html' },
-          { label: 'Facturation & paie', href: '/solutions.html' }
+          { label: 'ATS & CRM', href: '/solutions/' },
+          { label: 'Automatisation', href: '/solutions/' },
+          { label: 'Planification', href: '/solutions/' },
+          { label: 'Facturation & paie', href: '/solutions/' }
         ]
       },
       {
         title: 'Entreprise',
         links: [
-          { label: 'A propos', href: '/company.html' },
-          { label: 'Equipe', href: '/company.html#team' },
-          { label: 'Timeline', href: '/company.html#timeline' },
-          { label: 'Securite', href: '/company.html#security' }
+          { label: 'A propos', href: '/company/' },
+          { label: 'Equipe', href: '/company/#team' },
+          { label: 'Timeline', href: '/company/#timeline' },
+          { label: 'Securite', href: '/company/#security' }
         ]
       },
       {
         title: 'Contact',
         links: [
-          { label: 'Planifier une demo', href: '/company.html#contact' },
+          { label: 'Planifier une demo', href: 'https://outlook.office365.com/book/CalendrierPRIMLogix@primlogix.com/s/Ti69MelPTkWrwygAg8qxBg2?ismsaljsauthenabled=true' },
           { label: 'info@primlogix.com', href: 'mailto:info@primlogix.com' },
           { label: '1 844-849-7746', href: 'tel:18448497746' }
         ]
@@ -924,21 +924,21 @@ const CONTENT = {
             role: 'CEO et CTO',
             bio: 'Plus de 20 ans a faire evoluer PRIM vers une plateforme mondiale.',
             photo:
-              'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=600&auto=format&fit=crop'
+              'https://34.23.76.77/wp-content/uploads/nouveau site 2026/team/Etienne.png'
           },
           {
             name: 'Isabelle Caussignac',
             role: 'Responsable succes client',
             bio: 'Accompagne les agences vers des resultats mesurables.',
             photo:
-              'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=600&auto=format&fit=crop'
+              'https://34.23.76.77/wp-content/uploads/nouveau site 2026/team/Isabelle.png'
           },
           {
             name: 'Bruno Pelletier',
             role: 'Lead developpeur',
             bio: 'Pilote la qualite produit, l’automatisation et les deploiements.',
             photo:
-              'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop'
+              'https://34.23.76.77/wp-content/uploads/nouveau site 2026/team/bruno.png'
           },
           {
             name: 'Equipe produit & QA',

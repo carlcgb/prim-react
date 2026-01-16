@@ -23,8 +23,8 @@ export const team = () => `
               <article class="card" data-reveal style="--reveal-delay: ${index * 80}ms">
                 ${
                   member.photo
-                    ? `<img class="h-14 w-14 rounded-full object-cover" src="${member.photo}" alt="${member.name}" loading="lazy" />`
-                    : `<div class="flex h-14 w-14 items-center justify-center rounded-full bg-brand-navy-900 dark:bg-brand-accent-600 text-sm font-semibold text-white">${getInitials(member.name)}</div>`
+                    ? `<img class="h-24 w-24 rounded-full object-cover" src="${member.photo}" alt="${member.name}" loading="lazy" />`
+                    : `<div class="flex h-24 w-24 items-center justify-center rounded-full bg-brand-navy-900 dark:bg-brand-accent-600 text-base font-semibold text-white">${getInitials(member.name)}</div>`
                 }
                 <h3 class="mt-4 text-base font-semibold text-brand-navy-900 dark:text-white">${member.name}</h3>
                 <p class="text-xs text-brand-accent-600 dark:text-brand-accent-400">${member.role}</p>

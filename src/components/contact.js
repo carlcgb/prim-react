@@ -18,7 +18,7 @@ export const contact = () => `
           <a class="block text-sm text-neutral-600 dark:text-neutral-300 hover:text-brand-accent-600 dark:hover:text-brand-accent-400 transition-colors" href="mailto:${getContent().company.contact.email}">
             ${getContent().company.contact.email}
           </a>
-          <a class="pill-btn bg-orange-500 text-white hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 transition-colors" href="mailto:${getContent().company.contact.email}">
+          <a class="pill-btn bg-orange-500 text-white hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 transition-colors" href="https://outlook.office365.com/book/CalendrierPRIMLogix@primlogix.com/s/Ti69MelPTkWrwygAg8qxBg2?ismsaljsauthenabled=true" target="_blank" rel="noopener noreferrer">
             ${getContent().company.contact.cta}
           </a>
         </div>

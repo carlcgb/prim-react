@@ -29,6 +29,16 @@ export const initFeatureModal = () => {
   const content = modal.querySelector('.feature-modal-content')
   const featureCards = document.querySelectorAll('[data-feature-index]')
 
+  // Mapping des images pour chaque feature (index-based)
+  const featureImages = [
+    'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/PRIM Trio.png', // ATS + CRM
+    'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/PRIM Trio different.png', // Recruitment automation
+    'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/Cell Connection.png', // Scheduling + staffing
+    'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/Cell communications.png', // Billing + payroll
+    'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/Cell tableau bord.png', // BI dashboards
+    'https://34.23.76.77/wp-content/uploads/nouveau site 2026/mockups/Phone Dashboard.png', // Collaboration
+  ]
+
   // Ouvrir le modal
   const openModal = (index) => {
     const contentData = getContent()
@@ -40,9 +50,16 @@ export const initFeatureModal = () => {
     // Mettre à jour le contenu
     const titleEl = document.getElementById('modal-title')
     const descEl = document.getElementById('modal-description')
+    const screenshotEl = document.getElementById('modal-screenshot')
     
     if (titleEl) titleEl.textContent = feature.title
     if (descEl) descEl.textContent = feature.description
+    
+    // Mettre à jour l'image selon l'index
+    if (screenshotEl && featureImages[index]) {
+      screenshotEl.src = featureImages[index]
+      screenshotEl.alt = `${feature.title} screenshot`
+    }
     
     // Afficher le modal
     modal.classList.remove('hidden')
