@@ -209,6 +209,7 @@ gcloud compute ssh wordpress-prim-vm --zone=us-east1-b --command="sudo cp /tmp/i
 **Locations:** WordPress Media Library + local `public/`
 - Mockups live in `public/nouveau site 2026/` and are referenced via URL-encoded paths
 - Team photos and logos use WordPress media URLs
+- Downloadable files (installers, PDFs) live in `/var/www/html/wp-content/uploads/resources/`
 - Update image URLs in `src/data/content.js` or component files if you upload new images
 - Rebuild after changes to local assets
 

@@ -217,8 +217,11 @@ const CONTENT = {
           desc: 'Questions to evaluate staffing software and automation ROI.'
         },
         {
-          title: 'Implementation checklist',
-          desc: 'Launch plan for recruiters, clients, and compliance.'
+          title: 'PRIM Installer',
+          desc: 'Download the PRIM installer package for quick setup.',
+          href: 'https://34.23.76.77/wp-content/uploads/resources/PRIMInstall.zip',
+          cta: 'Download',
+          download: true
         },
         {
           title: 'Security brief',
@@ -705,8 +708,11 @@ const CONTENT = {
           desc: 'Questions pour evaluer un logiciel de placement et son ROI.'
         },
         {
-          title: 'Checklist de demarrage',
-          desc: 'Plan de lancement pour recruteurs, clients et conformite.'
+          title: 'Installateur PRIM',
+          desc: "Telechargez l'installateur PRIM pour un demarrage rapide.",
+          href: 'https://34.23.76.77/wp-content/uploads/resources/PRIMInstall.zip',
+          cta: 'Telecharger',
+          download: true
         },
         {
           title: 'Brief securite',

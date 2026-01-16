@@ -28,3 +28,7 @@ dist-ssr
 
 # Assets folder
 nouveau site 2026/
+
+# Build/package artifacts
+primlogix-dist.zip
+PRIMInstall.zip

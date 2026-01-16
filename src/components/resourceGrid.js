@@ -17,9 +17,23 @@ export const resourceGrid = () => `
             <article class="card" data-reveal style="--reveal-delay: ${index * 80}ms">
               <h3 class="text-lg font-semibold text-brand-navy-900 dark:text-white">${item.title}</h3>
               <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-300">${item.desc}</p>
-              <button class="mt-5 text-sm font-semibold text-brand-accent-600 dark:text-brand-accent-400 hover:text-brand-accent-700 dark:hover:text-brand-accent-300 transition-colors">
-                ${getContent().resourceGrid.cta}
-              </button>
+              ${
+                item.href
+                  ? `
+                    <a
+                      class="mt-5 inline-flex text-sm font-semibold text-brand-accent-600 dark:text-brand-accent-400 hover:text-brand-accent-700 dark:hover:text-brand-accent-300 transition-colors"
+                      href="${item.href}"
+                      ${item.download ? 'download' : ''}
+                    >
+                      ${item.cta || getContent().resourceGrid.cta}
+                    </a>
+                  `
+                  : `
+                    <button class="mt-5 text-sm font-semibold text-brand-accent-600 dark:text-brand-accent-400 hover:text-brand-accent-700 dark:hover:text-brand-accent-300 transition-colors">
+                      ${item.cta || getContent().resourceGrid.cta}
+                    </button>
+                  `
+              }
             </article>
           `
         ).join('')}

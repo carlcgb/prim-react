@@ -12,6 +12,7 @@ Marketing and pricing site for PRIMLogix, built with Vite + Tailwind CSS, deploy
 - Modular components in `src/components`
 - WordPress integration with dynamic asset loading
 - Deployed on Google Cloud VM at `34.23.76.77`
+- Downloadable resources stored in WordPress uploads (`/wp-content/uploads/resources/`)
 
 ## Scripts
 - `npm run dev` — start local dev server
